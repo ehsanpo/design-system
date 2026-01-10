@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardDescription, CardTitle } from './Card';
+import { Card } from './Card';
 import { Badge } from './Badge';
 import { Button } from './Button';
 import { 
   GraduationCap, 
   Calendar, 
   MapPin, 
-  Award, 
-  BookOpen, 
   ExternalLink,
   Star,
-  Clock,
   Users,
   Trophy,
   ChevronDown,
@@ -101,7 +98,7 @@ export function EducationTimeline({
       <div className="absolute left-8 top-0 w-0.5 h-full bg-gradient-to-b from-primary-500 to-secondary-500" />
       
       <div className="space-y-8">
-        {education.map((item, index) => (
+        {education.map((item) => (
           <div key={item.id} className="relative flex items-start space-x-6">
             {/* Timeline node */}
             <div className="relative z-10 w-16 h-16 rounded-full border-4 border-white bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center shadow-xl">
