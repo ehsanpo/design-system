@@ -78,7 +78,7 @@ export function SkillCard({
 
   return (
     <Card 
-      variant={variant} 
+      variant={variant === 'minimal' ? 'default' : variant} 
       hover 
       padding="lg" 
       className={cn('relative overflow-hidden', className)}

@@ -108,7 +108,7 @@ export function ProcessFlow({
               return (
                 <Card 
                   key={step.id}
-                  variant={variant} 
+                  variant={variant === 'cards' ? 'gradient' : 'default'} 
                   hover 
                   padding="lg"
                   className={cn(
@@ -259,7 +259,7 @@ export function ProcessFlow({
                   <div className="flex items-center justify-between mb-3">
                     <h3 className={cn(
                       'font-basement text-lg',
-                      isActive && variant !== 'gradient' ? 'text-foreground' : isActive ? 'text-white' : 'text-muted-foreground'
+                      isActive && variant !== 'cards' ? 'text-foreground' : isActive ? 'text-white' : 'text-muted-foreground'
                     )}>
                       {step.title}
                     </h3>
@@ -277,7 +277,7 @@ export function ProcessFlow({
                   
                   <p className={cn(
                     'font-kabel mb-4',
-                    isActive && variant !== 'gradient' ? 'text-muted-foreground' : isActive ? 'text-white/80' : 'text-muted-foreground'
+                    isActive && variant !== 'cards' ? 'text-muted-foreground' : isActive ? 'text-white/80' : 'text-muted-foreground'
                   )}>
                     {step.description}
                   </p>

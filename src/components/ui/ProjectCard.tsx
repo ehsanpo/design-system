@@ -97,7 +97,7 @@ export function ProjectCard({
 
   return (
     <Card 
-      variant={variant} 
+      variant={variant === 'minimal' ? 'default' : variant} 
       hover 
       padding="lg" 
       className={cn('relative overflow-hidden group', className)}

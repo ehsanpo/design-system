@@ -398,7 +398,7 @@ export function DataVisualization() {
                 </div>
                 <h4 className="font-basement text-foreground mb-1">Recharts</h4>
                 <p className="text-xs text-muted-foreground font-kabel mb-2">React-based charting library</p>
-                <Badge variant="accent" className="text-xs">React</Badge>
+                <Badge variant="primary" className="text-xs">React</Badge>
               </div>
             </div>
           </CardContent>

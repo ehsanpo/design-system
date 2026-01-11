@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardContent, CardDescription, CardTitle } from './Card';
-import { Badge } from './Badge';
+import { Card, CardContent, CardDescription, CardTitle } from './ui/Card';
+import { Badge } from './ui/Badge';
 import { MessageCircle, Heart, Lightbulb, Shield, Users, Zap } from 'lucide-react';
 
 export function ToneOfVoice() {

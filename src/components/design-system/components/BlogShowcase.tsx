@@ -209,7 +209,7 @@ export function BlogShowcase() {
       content: 'The Web Content Accessibility Guidelines (WCAG) provide a comprehensive framework for making web content accessible. Here are the four main principles:',
       type: 'list' as const,
       list: {
-        type: 'ordered',
+        type: 'ordered' as const,
         items: [
           'Perceivable - Information must be presentable in ways users can perceive',
           'Operable - Interface components must be operable by all users',
@@ -273,7 +273,7 @@ export function Button({
       content: 'Regular testing is crucial for maintaining accessibility standards. Here are some effective approaches:',
       type: 'list' as const,
       list: {
-        type: 'unordered',
+        type: 'unordered' as const,
         items: [
           'Use automated testing tools like axe-core and Lighthouse',
           'Test with real screen readers (NVDA, JAWS, VoiceOver)',

@@ -274,7 +274,7 @@ export function Accessibility() {
                 </div>
                 <h4 className="font-basement text-foreground mb-2">JAWS</h4>
                 <p className="text-xs text-muted-foreground font-kabel mb-2">Professional Windows screen reader</p>
-                <Badge variant="accent" className="text-xs">Windows</Badge>
+                <Badge variant="primary" className="text-xs">Windows</Badge>
               </div>
             </div>
             

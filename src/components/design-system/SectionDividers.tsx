@@ -154,7 +154,7 @@ export function SectionDividers() {
                   </div>
                   <div className="bg-muted/30 rounded-lg overflow-hidden">
                     <SectionDivider 
-                      variant="wave"
+                      variant="curve"
                       color={color.value}
                       height="sm"
                     />
@@ -209,7 +209,7 @@ export function SectionDividers() {
                   </div>
                   
                   {/* Divider */}
-                  <SectionDivider variant="wave" color="white" height="md" />
+                  <SectionDivider variant="curve" color="white" height="md" />
                   
                   {/* Mock content section */}
                   <div className="bg-background p-8 text-center">
@@ -378,7 +378,7 @@ export function SectionDividers() {
                   <p className="text-white/80 font-kabel">Hero area with gradient background</p>
                 </div>
                 
-                <SectionDivider variant="wave" color="white" height="md" />
+                <SectionDivider variant="curve" color="white" height="md" />
                 
                 <div className="bg-background p-8 text-center">
                   <h3 className="text-xl font-basement text-foreground mb-2">About Section</h3>

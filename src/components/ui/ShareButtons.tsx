@@ -161,7 +161,7 @@ export function ShareButtons({
     return (
       <div className={cn('fixed right-4 top-1/2 transform -translate-y-1/2 z-40', className)}>
         <div className="flex flex-col space-y-2 glass-card p-2 rounded-lg border border-border/50">
-          {navigator.share && (
+          {typeof navigator !== 'undefined' && 'share' in navigator && (
             <Button
               variant="ghost"
               size="sm"
@@ -193,7 +193,7 @@ export function ShareButtons({
       </div>
       
       <div className="flex flex-wrap gap-2">
-        {navigator.share && (
+        {typeof navigator !== 'undefined' && 'share' in navigator && (
           <Button
             variant="gradient"
             size="sm"

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../ui/Card';
 import { Button } from '../../ui/Button';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../../ui/Badge';
 import { Section } from '../../ui/Section';
 import { SkillsRadarChart } from '../../ui/SkillsRadarChart';
 import { 
@@ -25,7 +25,7 @@ export function SectionShowcase() {
       {/* Navigation */}
       <div className="flex gap-4 mb-8">
         <Button
-          variant={selectedView === 'sections' ? 'default' : 'outline'}
+          variant={selectedView === 'sections' ? 'primary' : 'outline'}
           onClick={() => setSelectedView('sections')}
           className="flex items-center gap-2"
         >
@@ -33,7 +33,7 @@ export function SectionShowcase() {
           Sections
         </Button>
         <Button
-          variant={selectedView === 'radar' ? 'default' : 'outline'}
+          variant={selectedView === 'radar' ? 'primary' : 'outline'}
           onClick={() => setSelectedView('radar')}
           className="flex items-center gap-2"
         >

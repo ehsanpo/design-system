@@ -240,7 +240,7 @@ export function Footer({
                   const Icon = link.icon;
                   return (
                     <li key={link.name}>
-                      {link.href ? (
+                      {'href' in link && link.href ? (
                         <a
                           href={link.href}
                           target="_blank"
@@ -253,7 +253,7 @@ export function Footer({
                         </a>
                       ) : (
                         <button
-                          onClick={() => link.id && handleNavigation(link.id)}
+                          onClick={() => 'id' in link && link.id && handleNavigation(link.id)}
                           className="flex items-center text-sm text-muted-foreground hover:text-primary-500 transition-colors font-kabel group"
                         >
                           <Icon className="w-4 h-4 mr-2 transition-transform group-hover:scale-110" />

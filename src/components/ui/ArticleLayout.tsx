@@ -82,7 +82,7 @@ interface ArticleLayoutProps {
   relatedArticles?: RelatedArticle[];
   tableOfContents?: boolean;
   showProgress?: boolean;
-  variant?: 'default' | 'glass' | 'minimal';
+  variant?: 'default' | 'glass' | 'gradient' | 'minimal';
   className?: string;
 }
 
@@ -284,7 +284,7 @@ export function ArticleLayout({
         <div className={cn(tableOfContents && content.length > 3 ? 'lg:col-span-3' : 'lg:col-span-4')}>
           <article className="space-y-8">
             {/* Article Header */}
-            <Card variant={variant} padding="lg">
+            <Card variant={variant === 'minimal' ? 'default' : variant} padding="lg">
               {/* Featured Image */}
               {featuredImage && (
                 <div className="aspect-video relative overflow-hidden rounded-lg mb-6">

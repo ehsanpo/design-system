@@ -289,7 +289,7 @@ export function DecorativeElement({
       {text && (
         <div className={cn(
           'font-kabel text-center mt-4',
-          variant === 'cyberpunk' || variant === 'matrix' || variant === 'glitch' || variant === 'data'
+          variant === 'data' || variant === 'circuit' || variant === 'scan'
             ? 'text-accent-500 font-mono text-xs' 
             : 'text-muted-foreground',
           size === 'sm' ? 'text-xs' : size === 'md' ? 'text-sm' : 'text-base'

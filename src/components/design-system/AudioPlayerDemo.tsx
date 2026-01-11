@@ -98,7 +98,7 @@ export function AudioPlayerDemo() {
     'Ambient': 'success',
     'Electronic': 'primary',
     'Lo-Fi': 'secondary',
-    'Classical': 'accent',
+    'Classical': 'primary',
     'Jazz': 'warning',
     'Rock': 'error'
   } as const;

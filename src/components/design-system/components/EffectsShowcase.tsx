@@ -130,7 +130,7 @@ export function EffectsShowcase() {
           <div className="grid grid-cols-2 gap-3">
             <Badge variant="primary">React</Badge>
             <Badge variant="secondary">TypeScript</Badge>
-            <Badge variant="accent">Node.js</Badge>
+            <Badge variant="primary">Node.js</Badge>
             <Badge variant="success">AWS</Badge>
           </div>
         </div>

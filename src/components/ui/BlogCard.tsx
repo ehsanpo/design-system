@@ -252,7 +252,7 @@ export function BlogCard({
 
   return (
     <Card 
-      variant={featured ? 'gradient' : variant} 
+      variant={featured ? 'gradient' : (['minimal', 'horizontal'].includes(variant || '') ? 'default' : (variant as 'default' | 'gradient' | 'glass'))} 
       hover 
       className={cn('overflow-hidden group', className)}
     >

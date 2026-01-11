@@ -572,7 +572,7 @@ export function ClientLogosGrid({
                   {industries.map((industry) => (
                     <button
                       key={industry}
-                      onClick={() => setSelectedIndustry(industry)}
+                      onClick={() => setSelectedIndustry(industry || 'all')}
                       className={cn(
                         'px-3 py-1 rounded-lg text-sm font-kabel transition-all',
                         selectedIndustry === industry
@@ -604,7 +604,7 @@ export function ClientLogosGrid({
                   {years.map((year) => (
                     <button
                       key={year}
-                      onClick={() => setSelectedYear(year)}
+                      onClick={() => setSelectedYear(year || 'all')}
                       className={cn(
                         'px-3 py-1 rounded-lg text-sm font-kabel transition-all',
                         selectedYear === year
